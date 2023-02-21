@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCSS</title>
+  </head>
+  <body>
+    <!-- Positioning -->
+    <div class="relative h-12 w-1/2 bg-red-300">
+      <p>Parent Element</p>
+      <div class="absolute bottom-0 right-0 bg-red-600">
+        <p class="text-white">Absolute Child</p>
+      </div>
+    </div>
+
+    <!-- Top left corner -->
+    <div class="relative h-32 w-1/2 bg-yellow-200">
+      <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-500"></div>
+    </div>
+
+    <!-- Top right corner -->
+    <div class="relative h-32 w-1/2 bg-yellow-200">
+      <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-500"></div>
+    </div>
+
+    <!-- Bottom left corner -->
+    <div class="relative h-32 w-1/2 bg-yellow-200">
+      <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-500"></div>
+    </div>
+
+    <!-- Bottom right corner -->
+    <div class="relative h-32 w-1/2 bg-yellow-200">
+      <div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-500"></div>
+    </div>
+
+    <!-- Span top edge -->
+    <div class="relative h-32 w-1/2 bg-yellow-200">
+      <div class="absolute inset-x-0 top-0 h-16 bg-yellow-500"></div>
+    </div>
+
+    <div class="relative h-32 w-1/2 bg-yellow-200">
+      <div class="absolute inset-x-4 top-4 h-16 bg-yellow-500"></div>
+    </div>
+
+    <!-- Span left edge -->
+    <div class="relative h-32 w-1/2 bg-yellow-200">
+      <div class="absolute inset-y-0 top-0 w-16 bg-yellow-500"></div>
+    </div>
+
+    <!-- Span right edge -->
+    <div class="relative h-32 w-1/2 bg-yellow-200">
+      <div class="absolute inset-y-0 right-0 top-0 w-16 bg-yellow-500"></div>
+    </div>
+
+    <!-- Span bottom edge -->
+    <div class="relative h-32 w-1/2 bg-yellow-200">
+      <div class="absolute inset-x-0 bottom-0 h-16 bg-yellow-500"></div>
+    </div>
+
+    <!-- Display Classes -->
+    <div>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus omnis deserunt earum, nam sapiente consequatur, tenetur veritatis officia vel. 
+      <span class="inline font-bold">This is inline text in the rest of the text.</span> Nesciunt odit iusto temporibus quas architecto nostrum sed eligendi! 
+      <span class="inline-block font-bold">This is inline block text in the rest of the text.</span> Voluptate fugit nisi consequuntur, earum dicta ullam perferendis amet doloremque repudiandae.
+      <span class="block font-bold">This is block text in the rest of the text.</span> Exercitationem consectetur itaque rerum deserunt architecto? Labore, nostrum natus.
+      <span class="hidden font-bold">This is hidden text (Ooooo) in the rest of the text.</span> Exercitationem consectetur itaque rerum deserunt architecto? Labore, nostrum natus.
+    </div>
+
+    <!-- Z-Index -->
+    <div>
+      <div class="absolute h-8 w-64 left-0 bg-blue-200">00</div>
+      <div class="absolute h-8 w-64 left-20 bg-blue-300">20</div>
+      <div class="absolute h-8 w-64 left-40 bg-blue-400">40</div>
+      <div class="absolute h-8 w-64 left-60 bg-blue-500">60</div>
+      <div class="absolute h-8 w-64 left-80 bg-blue-600">80</div>
+    </div>
+    <div>
+      <p class="text-black">break</p>
+    </div>
+    <div>
+      <div class="absolute h-8 w-64 left-0 bg-blue-200">00</div>
+      <div class="absolute h-8 w-64 left-20 bg-blue-300 z-10">20</div>
+      <div class="absolute h-8 w-64 left-40 bg-blue-400">40</div>
+      <div class="absolute h-8 w-64 left-60 bg-blue-500 z-20">60</div>
+      <div class="absolute h-8 w-64 left-80 bg-blue-600">80</div>
+    </div>
+
+    <!-- Floats -->
+    <div class="w-2/3">
+      <img class="w-48 h-48 float-left m-2" src="../assets/img/img1.jpg" alt="">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nemo impedit iste! Repellat officiis unde aliquam quam vitae praesentium a. Repellendus nemo impedit iste! Repellat officiis unde aliquam quam vitae praesentium a.
+      </p>
+    </div>
+  </body>
+</html>
+
+<!-- Position Classes
+      static	    position: static;
+      fixed	      position: fixed;
+      absolute	  position: absolute;
+      relative	  position: relative;
+      sticky	    position: sticky;
+    -->
+
+<!-- Display Classes
+      block	            display: block;
+      inline-block	    display: inline-block;
+      inline	          display: inline;
+      flex	            display: flex;
+      inline-flex	      display: inline-flex;
+      table	            display: table;
+      grid	            display: grid;
+      inline-grid	      display: inline-grid;
+      contents	        display: contents;
+      list-item	        display: list-item;
+      hidden	          display: none;
+    -->
+
+<!-- Z-Index
+      z-0	    z-index: 0;
+      z-10	  z-index: 10;
+      z-20	  z-index: 20;
+      z-30	  z-index: 30;
+      z-40	  z-index: 40;
+      z-50	  z-index: 50;
+      z-auto	z-index: auto;
+    -->
+
+<!-- Float
+      float-right	  float: right;
+      float-left	  float: left;
+      float-none	  float: none;
+    -->
