@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+    <title>Flo's Fakes - New York's Favourite Burgers</title>
+</head>
+<body class="overflow-x-hidden bg-flosGray">
+    <!-- Background div -->
+    <div class="bg-flosOrgange">
+        <!-- Relative or Container based on screen size -->
+        <nav class="relative mx-auto p-6 bg-flosOrgange lg:container">
+            <!-- Nav items -->
+            <div class="flex items-center justify-between space-x-20 my-6">
+                <div class="z-40">
+                    <a href="#"><img src="https://raw.githubusercontent.com/tambuildsthings/web-bits/4b77e71be175b65e8577b63a690a804d3d7a7d12/fakeburgers/logo-hero.svg" class="max-h-6" alt="Flo's logo"></a>
+                </div>
+                <!-- Menu items -->
+                <div class="hidden items-center space-x-10 uppercase text-black lg:flex">
+                    <a href="#about" class="tracking-widest text-xl font-bold hover:text-flosLime">About</a>
+                    <a href="#menu" class="tracking-widest text-xl font-bold hover:text-flosLime">Menu</a>
+                    <a href="#reviews" class="tracking-widest text-xl font-bold hover:text-flosLime">Reviews</a>
+                    <a href="#social" class="tracking-widest text-xl font-bold hover:text-flosLime">Social</a>
+                </div>
+                <!-- Hamburger -->
+                <button id="menu-btn" class="z-40 block lg:hidden focus:outline-none hamburger">
+                    <span class="ham-top"></span>
+                    <span class="ham-mid"></span>
+                    <span class="ham-bot"></span>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div id="menu" class="fixed inset-0 z-30 hidden flex-col items-center self-end w-full min-h-screen pt-36 tracking-widest text-black uppercase text-2xl bg-flosOrgange">
+                <div class="w-full pb-6 text-center font-bold text-3xl hover:text-flosLime"><a href="#about" class="block">About</a></div>
+                <div class="w-full py-6 text-center font-bold text-3xl hover:text-flosLime"><a href="#menu" class="block">Menu</a></div>
+                <div class="w-full py-6 text-center font-bold text-3xl hover:text-flosLime"><a href="#reviews" class="block">Reviews</a></div>
+                <div class="w-full py-6 text-center font-bold text-3xl hover:text-flosLime"><a href="#social" class="block">Social</a></div>
+                <img src="https://raw.githubusercontent.com/tambuildsthings/web-bits/4b77e71be175b65e8577b63a690a804d3d7a7d12/fakeburgers/logo-voted.svg" alt="Voted best burger in New York" class="rotate-12 pt-8 w-48">
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero section -->
+    <section id="hero" class="bg-flosOrgange">
+        <!-- Container for hero content -->
+        <div class="container relative flex flex-col mx-auto p-6 lg:flex-row lg:mb-0">
+            <!-- Text -->
+            <div class="relative flex flex-col space-y-8 lg:mt-8 lg:w-2/3">
+                <!-- Header -->
+                <h1 class="text-5xl text-left font-bowlbly uppercase lg:text-7xl"><span class="block">New York's</span> Favourite Veggie <span class="block">Burger</span></h1>
+
+                <!-- Sub header -->
+                <p class="max-w-xl mx-auto text-black text-xl text-left lg:mt-0 lg:mx-0 z-20">In a world so painfully serious, yet so ridiculous, you knew it was only a matter of time before plant-based steak became a thing.</p>
+
+                <!-- Voted Best Badge -->
+                <div class="lg:absolute top-32 left-96 lg:z-20">
+                    <img src="https://raw.githubusercontent.com/tambuildsthings/web-bits/4b77e71be175b65e8577b63a690a804d3d7a7d12/fakeburgers/logo-voted.svg" alt="Voted best burger in New York" class="opacity-0 lg:opacity-100 rotate-12">
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="lg:relative absolute pt-56 pl-28 lg:pl-0 lg:pt-0 lg:mx-0 lg:w-1/2">
+                <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/burgers-hero.png?raw=true" alt="Our best burger yet" class="relative z-10 lg:top-10 -rotate-3">
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div class="container relative flex flex-col mx-auto px-6 pt-32 lg:pt-4 pb-12 lg:flex-row lg:pb-24">
+            <div class="flex flex-col justify-center w-full lg:items-start lg:justify-start">
+                <a href="#" class="px-10 lg:py-3 py-5 font-bold text-3xl lg:text-lg bg-black text-white text-center shadow-md border border-black uppercase hover:bg-flosLime hover:border-flosLime hover:text-black">Browse menu</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-flosGray">
+        <!-- About header and image -->
+        <container class="container relative flex flex-col mx-auto px-6">
+            <h2 class="mb-6 mt-14 text-5xl font-bowlbly text-flosOrgange uppercase text-left z-10 lg:w-2/3">Hi, we're Flo's Fakes, a collective of eco warriors who love burgers.</h2>
+            <div class="lg:absolute lg:right-9 lg:top-48 lg:w-1/2">
+                <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/photos-kitchen.png?raw=true" alt="" class="">
+                <p class="max-w-md p-6 pb-20 mx-auto text-center text-black">This is Flo. He started everything 10 years ago.</p>
+            </div>
+        </container>
+
+        <!-- About part 2 image and text -->
+        <container class="container relative flex flex-col mx-auto px-6">
+            <div class="flex flex-col lg:flex-row lg:w-full lg:pt-80">
+                <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/photos-open.png?raw=true" alt="" class="lg:flex lg:flex-row lg:w-1/2">
+
+                <div class="lg:flex lg:flex-col lg:items-end lg:justify-end lg:mb-20 lg:pl-24">
+                    <h3 class="lg:flex lg:flex-col mb-6 mt-14 text-5xl font-bowlbly text-flosOrgange uppercase text-left z-10 lg:w-full">Food is for everyone.</h3>
+                    <p class="lg:flex lg:flex-col w-full text-xl pb-14 mx-auto text-left text-flosOrgange">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+
+        </container>
+    </section>
+    
+    <!-- Video panel -->
+    <section class="bg-flosGray lg:pt-24">
+        <container class="container relative flex flex-col mx-auto">
+            <!-- desktop -->
+            <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/photos-kitchen2-large.png?raw=true" alt="Flo flowing in the kitchen" class="lg:block hidden">
+            <!-- mobile -->
+            <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/photos-kitchen2-small.png?raw=true" alt="Flo flowing in the kitchen" class="lg:hidden">
+            <!-- Text and button -->
+            <div class="absolute flex-col top-44 lg:top-36 left-24 lg:left-80 hover:bg-flosLime group">
+                <a href="#" class="flex flex-col mx-auto w-64 lg:w-80 text-center font-bowlbly text-4xl lg:text-3xl uppercase bg-none text-white hover:text-black group">We're Different
+                    <img src="https://raw.githubusercontent.com/tambuildsthings/web-bits/254725b3de23f096b4c275b97b4dba7918ea6953/fakeburgers/icons-play.svg" alt="" class="flex flex-col mx-auto w-20 transition-transform duration-300 group group-hover:-rotate-90">
+                </a>
+            </div>
+        </container>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="bg-flosGray">
+        <!-- Menu header container -->
+        <container class="container relative flex flex-col mx-auto px-6 pt-10">
+            <!-- Organic Meats Badge -->
+            <div class="absolute -top-12 left-10 z-20">
+                <img src="https://raw.githubusercontent.com/tambuildsthings/web-bits/45aaadf0b66b720ed574b21a68228a879503be7a/fakeburgers/icons-organic.svg" alt="Organic Meats (made from veggies)" class="-rotate-3 transition-transform duration-300 hover:rotate-3 w-32">
+            </div>
+            <!-- Text elements -->
+            <h2 class="mb-6 mt-14 text-5xl font-bowlbly text-flosOrgange uppercase text-left">Our Burgers</h2>
+                <p class="lg:flex lg:flex-col max-w-2xl text-xl pb-10 text-left text-flosOrgange">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </container>
+
+        <!-- Burger cards -->
+        <container class="container flex flex-col mx-auto px-6">
+            <div class="flex flex-col lg:flex-row w-full pb-12 space-y-12 lg:space-y-0 lg:space-x-1">
+                <!-- Burger card 1 - Shrimp -->
+                <div class="flex flex-col lg:w-1/4 border-transparent border-4 hover:border-dashed hover:border-flosOrgange">
+                    <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/burgers-hero.png?raw=true" alt="" class="flex flex-col">
+                    <div class="bg-white">
+                        <p class="flex flex-col mx-auto text-center text-4xl lg:text-xl font-bowlbly uppercase pt-8 lg:pt-4 pb-4 lg:pb-2">Shrimp Yo!</p>
+                        <p class="flex flex-col text-center text-2xl lg:text-sm mb-10 lg:mb-5 px-2">Grilled shrimp-ish burger with coleslaw in a homemade fluffy bun</p>
+                    </div>
+                </div>
+
+                <!-- Burger card 2 - Double -->
+                <div class="flex flex-col lg:w-1/4 border-transparent border-4 hover:border-dashed hover:border-flosOrgange">
+                    <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/burgers-double.png?raw=true" alt="" class="flex flex-col">
+                    <div class="bg-white">
+                        <p class="flex flex-col mx-auto text-center text-4xl lg:text-xl font-bowlbly uppercase pt-8 lg:pt-4 pb-4 lg:pb-2">Double Trouble</p>
+                        <p class="flex flex-col text-center text-2xl lg:text-sm mb-10 lg:mb-5 px-2">Flangus Beef burger with Gouda cheese and facon in a sesame bun.</p>
+                    </div>
+                </div>
+
+                <!-- Burger card 3 - Juicy -->
+                <div class="flex flex-col lg:w-1/4 border-transparent border-4 hover:border-dashed hover:border-flosOrgange">
+                    <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/burgers-juicy.png?raw=true" alt="" class="flex flex-col">
+                    <div class="bg-white">
+                        <p class="flex flex-col mx-auto text-center text-4xl lg:text-xl font-bowlbly uppercase pt-8 lg:pt-4 pb-4 lg:pb-2">Juicy Jo</p>
+                        <p class="flex flex-col text-center text-2xl lg:text-sm mb-10 lg:mb-5 px-2">Fake Beef Burger with fried onion toped with ragu sauce in a rye bun.</p>
+                    </div>
+                </div>
+
+                <!-- Burger card 4 - Double -->
+                <div class="flex flex-col lg:w-1/4 border-transparent border-4 hover:border-dashed hover:border-flosOrgange">
+                    <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/burgers-crispy.png?raw=true" alt="" class="flex flex-col">
+                    <div class="bg-white">
+                        <p class="flex flex-col mx-auto text-center text-4xl lg:text-xl font-bowlbly uppercase pt-8 lg:pt-4 pb-4 lg:pb-2">Crispy Chi</p>
+                        <p class="flex flex-col text-center text-2xl lg:text-sm mb-10 lg:mb-5 px-2">The fried chicken and cheese burger of your dreams - in veggie mode.</p>
+                    </div>
+                </div>
+            </div>
+        </container>
+    </section>
+
+    <!-- Banners -->
+    <section class="bg-flosGray pt-20">
+        <div class="absolute bg-flosLime h-14 w-screen lg:w-[2700px] rotate-1 z-20 bg-repeat-x bg-center" style="background-image: url(https://raw.githubusercontent.com/tambuildsthings/web-bits/2b5ea16fe8627c78d6e4309c3dec4a204734ddce/fakeburgers/bg-life-banner.svg)"></div>
+
+        <div class="absolute bg-flosLime h-14 w-[2800px] -ml-56 -rotate-3 z-10 bg-repeat-x bg-center" style="background-image: url(https://raw.githubusercontent.com/tambuildsthings/web-bits/2b5ea16fe8627c78d6e4309c3dec4a204734ddce/fakeburgers/bg-life-banner.svg)"></div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="bg-flosGray">
+        <div class="container mx-auto px-6 mt-48">
+            <h2 class="mb-6 mt-14 text-5xl font-bowlbly text-flosOrgange uppercase text-left">Some Reviews</h2>
+            <p class="lg:flex lg:flex-col max-w-2xl text-2xl pb-10 text-left text-flosOrgange">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!-- Reviews grids -->
+        <div class="container mx-auto px-6 mt-4 w-full pb-10 lg:pb-20 grid lg:grid-cols-3 grid-cols-1 gap-3">
+            <!-- First grid of 3 -->
+            <div class="inline-grid gap-3 grid-cols-1 h-max">
+                <!-- Review card 1 -->
+                <div class="flex bg-white h-max">
+                    <div class="flex flex-col w-full m-4">
+                        <div class="flex flex-row">
+                            <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/profile-pic-01.png?raw=true" alt="" class="w-10">
+                            <p class="uppercase my-auto pl-4 pr-2">Username One</p>
+                        </div>
+                        <p class="flex text-left pl-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+
+                <!-- Review card 2 -->
+                <div class="flex bg-white h-max">
+                    <div class="flex flex-col w-full m-4">
+                        <div class="flex flex-row">
+                            <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/profile-pic-02.png?raw=true" alt="" class="w-10">
+                            <p class="uppercase my-auto pl-4 pr-2">Username Two</p>
+                        </div>
+                        <p class="flex text-left pl-14">Lorem ipsum dolor sit amet, consectetur adipiscing!</p>
+                    </div>
+                </div>
+
+                <!-- Review card 3 -->
+                <div class="flex bg-white h-max">
+                    <div class="flex flex-col w-full m-4">
+                        <div class="flex flex-row">
+                            <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/profile-pic-03.png?raw=true" alt="" class="w-10">
+                            <p class="uppercase my-auto pl-4 pr-2">Username Three</p>
+                        </div>
+                        <p class="flex text-left pl-14">Lorem ipsum dolor sit amet ipsum dolor sit amet. Dolor sit amet ipsum.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second grid of 3 -->
+            <div class="hidden lg:inline-grid gap-3 grid-cols-1 grid-rows-1 h-max">
+                <!-- Review card 4 -->
+                <div class="flex bg-white h-max">
+                    <div class="flex flex-col w-full m-4">
+                        <div class="flex flex-row">
+                            <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/profile-pic-04.png?raw=true" alt="" class="w-10">
+                            <p class="uppercase my-auto pl-4 pr-2">Username Four</p>
+                        </div>
+                        <p class="flex text-left pl-14">Lorem ipsum dolor. Dolor sit!</p>
+                    </div>
+                </div>
+
+                <!-- Review card 5 -->
+                <div class="flex bg-white h-max">
+                    <div class="flex flex-col w-full m-4">
+                        <div class="flex flex-row">
+                            <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/profile-pic-05.png?raw=true" alt="" class="w-10">
+                            <p class="uppercase my-auto pl-4 pr-2">Username Five</p>
+                        </div>
+                        <p class="flex text-left pl-14">Lorem ipsum dolor sit amet, consectetur adipiscing! Lorem ipsum dolor sit amet, consectetur adipiscing!Lorem ipsum dolor sit amet, consectetur adipiscing! Lorem ipsum dolor sit amet, consectetur adipiscing! Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <!-- Review card 6 -->
+                <div class="flex bg-white h-max">
+                    <div class="flex flex-col w-full m-4">
+                        <div class="flex flex-row">
+                            <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/profile-pic-06.png?raw=true" alt="" class="w-10">
+                            <p class="uppercase my-auto pl-4 pr-2">Username Six</p>
+                        </div>
+                        <p class="flex text-left pl-14">Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum. Dolor sit amet, consectetur adipiscing!</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Third grid of 3 -->
+            <div class="hidden lg:inline-grid gap-3 grid-cols-1 grid-rows-1 h-max">
+                <!-- Review card 7 -->
+                <div class="flex bg-white h-max">
+                    <div class="flex flex-col w-full m-4">
+                        <div class="flex flex-row">
+                            <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/profile-pic-03.png?raw=true" alt="" class="w-10">
+                            <p class="uppercase my-auto pl-4 pr-2">Username Seven</p>
+                        </div>
+                        <p class="flex text-left pl-14">Lorem ipsum dolor sit amet. Wow! Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+
+                <!-- Review card 8 -->
+                <div class="flex bg-white h-max">
+                    <div class="flex flex-col w-full m-4">
+                        <div class="flex flex-row">
+                            <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/profile-pic-01.png?raw=true" alt="" class="w-10">
+                            <p class="uppercase my-auto pl-4 pr-2">Username Eight</p>
+                        </div>
+                        <p class="flex text-left pl-14">Lorem ipsum dolor.</p>
+                    </div>
+                </div>
+
+                <!-- Review card 9 -->
+                <div class="flex bg-white h-max">
+                    <div class="flex flex-col w-full m-4">
+                        <div class="flex flex-row">
+                            <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/profile-pic-04.png?raw=true" alt="" class="w-10">
+                            <p class="uppercase my-auto pl-4 pr-2">Username Nine</p>
+                        </div>
+                        <p class="flex text-left pl-14">Lorem ipsum dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Load more button -->
+        <div class="container mx-auto px-4 pb-10">
+            <div id="load-reviews-btn" class="flex w-full lg:hidden bg-flosGray border border-black text-2xl text-center justify-center font-bold uppercase py-3 cursor-pointer hover:bg-flosLime">Load more</div>
+        </div>
+        
+    </section>
+
+
+    <!-- Social -->
+    <section id="social" class="bg-flosLime">
+        <div class="flex flex-row w-screen h-64">
+            <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/photos-open.png?raw=true" alt="" class="">
+            <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/insta-01.png?raw=true" alt="" class="">
+            <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/insta-02.png?raw=true" alt="" class="">
+            <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/insta-03.png?raw=true" alt="" class="">
+            <img src="https://github.com/tambuildsthings/web-bits/blob/main/fakeburgers/insta-follow.svg?raw=true" alt="" class="">
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-flosOrgange">
+        <div class="container relative flex flex-col mx-auto p-6 lg:flex-row lg:mb-0 pt-24 text-black font-bowlbly justify-start align-top text-left">
+            <div class="flex flex-col w-full">
+                <p class="mb-6 uppercase text-left text-6xl">Flo's Fakes</p>
+                <h2 class="text-4xl mb-6 text-left uppercase mr-20">Subscribe to our newsletter</h2>
+                <p class="text-xl font-sans">By subscribing to our newsletter, you will receive the latest tips, and promotions about our products and services straight to your inbox.</p>
+    
+                <!-- Email form -->
+                <form class="flex flex-col items-start justify-start w-full pt-8 lg:flex-row space-x-4 lg:px-0">
+                    <div class="flex flex-col justify-between items-center w-full lg:flex-row lg:mx-0">
+                        <input type="text" placeholder="Enter your email"
+                        class="flex mb-4 py-6 px-6 w-full border border-black bg-flosOrgange text-black placeholder-black font-sans text-xl text-center lg:text-left focus:outline-none focus:bg-flosLime" />
+                        
+                        <input type="submit" value="Subscribe" 
+                        class="flex px-6 py-5 mb-4 w-full lg:flex-1 border border-black cursor-pointer font-sans text-center justify-center text-3xl bg-black text-white uppercase hover:bg-flosLime hover:border-flosLime hover:text-black" />
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Menu links -->
+            <div class="flex flex-col lg:mx-0 lg:items-end space-y-16 px-6 lg:space-y-0">
+                <div class="flex flex-col items-center lg:text-right justify-between space-y-8 uppercase lg:flex-row lg:space-y-0 lg:space-x-8 lg:pt-8 pt-12 text-black font-sans">
+                    <a href="#about" class="hover:text-flosLime uppercase font-bold text-3xl lg:text-xl">about</a>
+                    <a href="#menu" class="hover:text-flosLime uppercase font-bold text-3xl lg:text-xl">menu</a>
+                    <a href="#reviews" class="hover:text-flosLime uppercase font-bold text-3xl lg:text-xl">reviews</a>
+                    <a href="#social" class="hover:text-flosLime uppercase font-bold text-3xl lg:text-xl">social</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Other links -->
+        <div class="container relative flex flex-col mx-auto lg:flex-row lg:mb-0 py-12 text-black font-bowlbly justify-start align-top text-left">
+            <div class="flex flex-row space-x-8 font-sans mx-auto lg:mx-6">
+                <a href="#" class="hover:text-flosLime uppercase text-lg">Privacy</a>
+                <a href="#" class="hover:text-flosLime uppercase text-lg">Terms</a>
+                <a href="#" class="hover:text-flosLime uppercase text-lg">Accessibility</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
